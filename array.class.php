@@ -5,5 +5,8 @@ class friday{
     public function addArray($a,$b){
         $array[$a]=$b;
     }
+    public function getOneArray($a){
+        print_r($array[$a]);
+    }
 }
 ?>
