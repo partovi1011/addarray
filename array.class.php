@@ -1,12 +1,20 @@
 <?php
 
 class friday{
-    $array = new SplFixedArray(19);
+    public $array;
+    public function create($a){
+        $this->array = new SplFixedArray($a);
+    }
     public function addArray($a,$b){
-        $array[$a]=$b;
+        $this->array[$a]=$b;
     }
     public function getOneArray($a){
-        print_r($array[$a]);
+        if($a>=20){
+            echo "-1";
+        }else{
+            echo $this->array[$a];
+        }
+        
     }
 }
 ?>
